@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="ko">
+  
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>COMMUNITY</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="heart.css">
+
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
+  
+    <!-- 슬라이더 -->
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
+
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <script>
+      $( document ).ready( function() {
+        
+        $('.post-wrapper').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      nextArrow:$('.next'),
+      prevArrow:$('.prev'),
+    });
+        
+        } );
+      </script>
+</head>
+
+<body>
+
+  <!-- 내비게이션 영역 시작 -->
+  <div class="row">
+    <nav class="navbar navbar-expand-lg fixed-top py-6 bagel-font" data-navbar-on-scroll="data-navbar-on-scroll">
+      <div class="container-fluid">
+        
+        <div class="col-lg-1">
+        
+          <div class="nav-bar-logo">
+            <a class="navbar-brand d-flex align-items-center fw-bold fs-3" style="margin: 0 0 0 0;" href="index.html">
+              <img src="images/pixelcat.png" width="28" alt="로고">&nbsp;&nbsp;
+              <div class="text-warning">KO</div>
+              <div>SHOT</div>
+            </a>
+          </div>
+  
+        </div>
+  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border: 0px;">
+          <span class="bi bi-filter-right"></span>
+        </button>
+       
+        
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          
+          <div class="col-lg-3"; style="margin: 0 auto;">
+          <ul class="navbar-nav">
+              
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">
+                ABOUT
+              </a>
+            </li>
+              
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="T" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                TYPE
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="type-calico.html">삼색이</a></li>
+                <li><a class="dropdown-item" href="type-ginger.html">치즈</a></li>
+                <li><a class="dropdown-item" href="type-mackerel.html">고등어</a></li>
+                <li><a class="dropdown-item" href="type-tuxedo.html">턱시도</a></li>
+                <li><a class="dropdown-item" href="type-solid.html">단색</a></li>
+              </ul>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link" href="adopt.html">
+                ADOPT
+              </a>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link" href="community.html">
+                COMMUNITY
+              </a>
+            </li>
+  
+          </ul>
+          </div>
+  
+          <div class="nav-bar-button">
+            <button type="button" data-bs-toggle="modal" data-bs-target="#login"
+            class="btn btn-warning rounded-pill">login / signup</button>         
+          </div>
+  
+        </div>
+        
+  
+      </div>
+    </nav>
+    </div>
+    <!-- 내비게이션 영역 종료 -->
+
+    <!-- 모달 영역 시작 -->
+    <div class="modal fade" id="login" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+         
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 bagel-font" id="exampleModalToggleLabel">Login</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          
+          <div class="modal-body">
+            
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+
+          </div>
+
+          <div class="modal-footer">
+            <button class="btn btn-warning rounded-pill bagel-font" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" style="background-color: white; border: 0px;">Sign up</button>
+            <button class="btn btn-warning rounded-pill bagel-font" data-bs-target="#" data-bs-toggle="modal"">login</button>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          
+          <div class="modal-header bagel-font">
+            <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Sign up</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body">
+            
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <div class="form-floating mt-1 mb-3">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Check Password</label>
+            </div>
+
+            <form action="#" method="#" name="#" enctype="multipart/form-data" onsubmit="#" style="font-family: 'SOYOMapleBoldTTF';">
+              <input class="mb-4" type="checkbox" name="agreements" onClick="agreeCheck(this.form)" style="accent-color: #f6c344;">&nbsp;&nbsp;[필수] 약관 동의
+              <div class="modal-footer bagel-font">
+              <input type="submit" class="btn btn-warning rounded-pill bagel-font" data-bs-target="#login" data-bs-toggle="modal" name="checkButton" value="Sign up"  disabled/>
+              </div>
+            </form>
+
+          </div>
+
+          <script>
+            function agreeCheck(frm){
+                       if (frm.checkButton.disabled==true)
+                        frm.checkButton.disabled=false
+                       else
+                        frm.checkButton.disabled=true
+             }
+          </script>
+
+        </div>
+      </div>
+    </div>
+    <!-- 모달 영역 종료 -->
+
+
+    <section class="py-3 text-center container">
+      <div class="row py-1 pt-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light bagel-font mb-3">고양이 자랑하기!</h1>
+          <p class="lead fs-5 text-body-secondary">
+            우리집 고양이, 길에서 본 고양이 등<br>
+            주변에서 본 고양이를 사진과 함께 공유해요
+          </p>
+          <p>
+            <a href="#" class="btn btn-warning rounded-pill my-2">글 작성하기</a>
+          </p>
+        </div>
+      </div>
+      
+    </section>
+
+
+
+    <div class="row p-5 pt-2" style="font-family: 'SOYOMapleBoldTTF';" >
+      <div class="col-md-4" >
+        
+        <div id="cblog1" class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-light">1</strong>
+            <h5 class="mb-2 text-light">우리집 삼색이 소개!</h5>
+            <div class="mb-4 text-light">Jun 12</div>
+            <p class="card-text mb-2 text-light" id="cnote"> 우리 집 삼색 고양이, 너무 예쁘죠? 😻 이름은 ...</p>
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link" style="color: #f6c344; text-decoration-line: none;">
+              계속 읽기
+              <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+            </a>
+          </div>
+          
+        </div>
+
+      </div>
+
+      <div class="col-md-4" >
+        
+        <div id="cblog2" class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-light">2</strong>
+            <h5 class="mb-2 text-light">우리집 꼬맹이~</h5>
+            <div class="mb-4 text-light">Jun 14</div>
+            <p class="card-text mb-2 text-light" id="cnote"> 우리 집에 새로운 가족이 생겼어요! 😺 이름 ...</p>
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link" style="color: #f6c344; text-decoration-line: none;">
+              계속 읽기
+              <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+            </a>
+          </div>
+          
+        </div>
+
+      </div>
+
+      <div class="col-md-4" >
+        
+        <div id="cblog3" class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-light">3</strong>
+            <h5 class="mb-2 text-light">보리의 큰 하품!</h5>
+            <div class="mb-4 text-light">Jun 9</div>
+            <p class="card-text mb-2 text-light" id="cnote"> 우리 집 보리, 오늘도 평온한 하루를 보내 ...</p>
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link" style="color: #f6c344; text-decoration-line: none;">
+              계속 읽기
+              <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+            </a>
+          </div>
+          
+        </div>
+
+      </div>
+
+    </div>
+
+    <hr class="mx-5 mt-0">
+
+    <!-- 글 썸네일 시작 -->
+
+    <div class="album p-5" style="align-items: center; justify-content: center;">
+      
+      <div class="container">
+  
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+          
+          <div class="col-md-3">
+
+            <div class="card shadow-sm mb-3">
+              <img src="images/c_000.jpeg">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  </div>
+                  <small class="text-body-secondary">9 mins</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="card shadow-sm mb-3">
+              <img src="images/c_001.jpeg">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  </div>
+                  <small class="text-body-secondary">32 mins</small>
+                </div>
+              </div>
+            </div>
+            <div class="card shadow-sm mb-3">
+              <img src="images/c_002.jpeg">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  </div>
+                  <small class="text-body-secondary">7 hours</small>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-md-3">
+
+            <div class="card shadow-sm mb-3">
+              <img src="images/c_003.jpeg">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  </div>
+                  <small class="text-body-secondary">9 mins</small>
+                </div>
+              </div>
+            </div>
+            <div class="card shadow-sm mb-3">
+              <img src="images/c_004.jpeg">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  </div>
+                  <small class="text-body-secondary">45 mins</small>
+                </div>
+              </div>
+            </div>
+            <div class="card shadow-sm mb-3">
+              <img src="images/c_005.jpeg">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  </div>
+                  <small class="text-body-secondary">7 hours</small>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-3">
+
+            <div class="card shadow-sm mb-3">
+              <img src="images/c_006.jpeg">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  </div>
+                  <small class="text-body-secondary">10 mins</small>
+                </div>
+              </div>
+            </div>
+            <div class="card shadow-sm mb-3">
+              <img src="images/c_007.jpeg">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  </div>
+                  <small class="text-body-secondary">3 hours</small>
+                </div>
+              </div>
+            </div>
+            <div class="card shadow-sm mb-3">
+              <img src="images/c_008.jpeg">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  </div>
+                  <small class="text-body-secondary">7 hours</small>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-3">
+
+            <div class="card shadow-sm mb-3">
+              <img src="images/c_009.jpeg">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  </div>
+                  <small class="text-body-secondary">24 mins</small>
+                </div>
+              </div>
+            </div>
+            <div class="card shadow-sm mb-3">
+              <img src="images/c_010.jpeg">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  </div>
+                  <small class="text-body-secondary">6 hours</small>
+                </div>
+              </div>
+            </div>
+            <div class="card shadow-sm mb-3">
+              <img src="images/c_011.jpeg">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  </div>
+                  <small class="text-body-secondary">9 hours</small>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- 페이지네이션 시작 -->
+  <ul class="pagination mb-5">
+    <li class="page-item">
+      <a class="page-link text-black" href="#" aria-label="First">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link text-black" href="#">1</a></li>
+    <li class="page-item"><a class="page-link text-black" href="#">2</a></li>
+    <li class="page-item"><a class="page-link text-black" href="#">3</a></li>
+    <li class="page-item"><a class="page-link text-black" href="#">4</a></li>
+    <li class="page-item"><a class="page-link text-black" href="#">5</a></li>
+    <li class="page-item">
+      <a class="page-link text-black" href="#" aria-label="Last">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+  <!-- 페이지네이션 끝 -->
+
+    <hr class="mx-5 mt-0">
+
+
+
+<!-- 탑 버튼 시작 -->
+<a href="#top" id="topbutton">
+  <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+    <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
+  </svg>
+  <p class="bagel-font" style="position: fixed; right: 50px; bottom: 15px;">top</p>
+</a>
+<!-- 탑 버튼 끝 -->
+
+
+
+
+<!-- 풋터 시작 -->
+<footer class="text-black">
+  <div class="container text-center" style="font-size: 13px;">
+      <p class="py-4 mb-0">Copyright <i class="bi bi-c-circle"></i> 2024 Designed by 
+        <a href="https://www.codethem.co.kr/" target="_blank" class="link-warning text-decoration-none">
+          kys718
+        </a>
+        / Image by freepik /
+        <a class="text-black" style="text-decoration-line:none;" href="https://icons8.com/icon/119892/pixel-cat">
+          Pixel Cat
+        </a> 
+          icon by 
+        <a class="text-black" style="text-decoration-line:none;" href="https://icons8.com">
+          Icons8
+        </a>
+      </p>
+  </div>           
+</footer>
+<!-- 풋터 끝 -->
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>

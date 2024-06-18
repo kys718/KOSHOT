@@ -1,0 +1,207 @@
+.bagel-font {
+    font-family: "Bagel Fat One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+@font-face {
+    font-family: 'SOYOMapleBoldTTF';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/SOYOMapleBoldTTF.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+header {
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 1.0), rgba(255, 255, 255, 0) 20%),
+  url(images/mainbg.jpg);
+  background-size: cover;
+  background-position: center top 40% ;
+  background-attachment: scroll;
+  margin-top: -20px;
+  margin-bottom: 10pc;
+}
+
+
+body {
+  padding-top: 55px;
+}
+
+nav {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.dropdown-item:active {
+  background-color: #f6c344;
+}
+
+
+
+.form-floating {
+  font-family: 'SOYOMapleBoldTTF';
+}
+
+.main {
+  margin-top: 100px;
+}
+#home {
+  margin-left: 40px;
+}
+
+#aboutbutton:hover {
+  background-color: #f6c344;
+  color: white;
+}
+
+.card:hover img{
+  filter: brightness(70%)
+}
+
+/* 캐러셀 시작 */
+
+.carousel-item:hover img{
+  filter: brightness(70%);
+}
+
+.post-slider{
+  width: 80%;
+  margin:0px auto;
+}
+.post-slider .silder-title{
+  text-align:center;
+  margin:30px auto;
+}
+
+.post-slider .post-wrapper{
+  width: 80%;
+  height: 350px;
+  margin:0px auto;
+  padding:10px 0px 10px 0px;
+  
+}
+
+.post-slider .post-wrapper .post{
+  width:300px;
+  height:300px;
+  margin:0px 10px;
+  background:transparent;
+  border-radius: 5px;
+}
+
+.post-slider .post-wrapper .post .slider-image{
+  width:100%;
+  border: solid rgba(0, 0, 0, 0.3) 5px;
+  border-radius: 70%;
+  overflow: hidden;
+
+}
+
+.card-text {
+  font-family: 'SOYOMapleBoldTTF';
+}
+
+h4.silder-title {
+  font-family: 'SOYOMapleBoldTTF';
+}
+/* 캐러셀 끝 */
+
+/* 블로그 시작 */
+
+#blog {
+    width:70%;
+  }
+
+.blog {
+  font-family: 'SOYOMapleBoldTTF';
+}
+
+.card-title {
+  font-family: 'bagel fat one';
+}
+
+
+
+/* About.html */
+/* 사이드바 시작 */
+
+
+.list-group {
+  width: auto;
+}
+
+.container {
+  font-family: 'SOYOMapleBoldTTF';
+}
+
+.ginger {
+  margin-top: 20px;
+  ;}
+
+
+
+.list-item {
+  padding: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  text-decoration-line: none;
+  justify-items: center;
+  align-items: center;
+}
+
+#list-item-1, #list-item-2, #list-item-3 {
+  margin-left: 10px;
+}
+
+/* 탑버튼 */
+#topbutton {
+  position: fixed; 
+  right: 40px; 
+  bottom: 40px;
+  color: black;
+  text-decoration-line: none;
+}
+
+#topbutton:hover {
+  color: #f6c344;
+}
+
+/* type.html */
+
+#t-info {
+  font-family: 'SOYOMapleBoldTTF';
+}
+
+.pagination {
+  justify-content: center;
+}
+
+/* adopt.html */
+#iicon:hover {
+  color: #f6c344;
+}
+
+/* community */
+
+#cblog1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+   url(images/blog1.jpg);
+  background-size: cover;
+  background-position: center top 40% ;
+}
+
+#cblog2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+   url(images/blog2.jpg);
+  background-size: cover;
+  background-position: center top 100% ;
+}
+
+#cblog3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+   url(images/blog3.jpg);
+  background-size: cover;
+  background-position: center top 40% ;
+}
