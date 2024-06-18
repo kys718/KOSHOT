@@ -56,7 +56,7 @@ nav {
   color: white;
 }
 
-.card:hover img{
+.card-index:hover img{
   filter: brightness(70%)
 }
 
